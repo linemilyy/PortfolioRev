@@ -1,10 +1,14 @@
 body {
     font-family: 'Lato', sans-serif;
+    background-image: url(../Images/Background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:#FFFCF8;
 }
 
 nav {
     width: 100%;
-    background-color:#FFFCF8;
+    background-color:transparent;
 }
 
 ul {
@@ -15,10 +19,10 @@ ul {
 }
 
 li {
+    font-family: 'Abril Fatface', cursive;
     list-style-type: none;
     padding: 20px;
-    font-size: 20px;
-    font-weight:500;
+    font-size: 22px;
 }
 
 li a {
@@ -30,7 +34,6 @@ li a:hover {
     color:#7A3324;
     transition:0.3s;
     text-decoration: none;
-    font-size: 19px;
 }
 
 li a:visited {
@@ -41,7 +44,7 @@ li a:visited {
 h1 {
     font-family: 'Abril Fatface', cursive;
     font-size: 62px;
-    color: #303030;
+    color: #7A3324;
     line-height: 70px;
 }
 
@@ -53,19 +56,6 @@ h2 {
     line-height: 45px;
 }
 
-.section1{
-    position:relative;
-    background-image: url("../Images/BackgroundLogo.png");
-    background-position: center;
-    background-color: #939393;
-    background-size: 120%;
-
-}
-
-.opacity{
-    opacity: 0.6;
-}
-
 .intro {
     position:absolute;
     top: 20%;
@@ -75,23 +65,26 @@ h2 {
 }
 
 footer {
-    text-align:center;
-    background-color: #FFFCF8;
+    padding-top:5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .fa-instagram-square, .fa-linkedin, .fa-envelope-square, .fa-phone-square-alt{
-    color: #7A3324;
-    font-size: 42px;
+    color: #303030;
+    font-size: 38px;
     transition: 0.3s;
     margin-right:15px;
 }
 
 .fa-instagram-square:hover, .fa-linkedin:hover,  .fa-envelope-square:hover, .fa-phone-square-alt:hover {
-    color: #A43F2D;
-    font-size: 36px; 
+    color: #7A3324;
 }
 
 .copyright {
+    color: #303030;
     font-size: xx-small;
     font-family: 'Lato', sans-serif;
     margin-top:5px;
