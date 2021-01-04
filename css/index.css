@@ -1,14 +1,13 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-image: url(../Images/Background1.jpg);
+    background-image: url(../Images/Background3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color:#FFFCF8;
 }
 
 nav {
-    width: 100%;
-    background-color:transparent;
+    width:100%;
 }
 
 ul {
@@ -44,14 +43,13 @@ li a:visited {
 h1 {
     font-family: 'Abril Fatface', cursive;
     font-size: 62px;
-    color: #7A3324;
+    color: #303030;
     line-height: 70px;
 }
 
 h2 {
     font-family: 'Lato', sans-serif;
-    font-size: 35px;
-    font-weight: 400;
+    font-size: 32px;
     color: #303030;
     line-height: 45px;
 }
@@ -65,36 +63,71 @@ h2 {
 }
 
 footer {
-    padding-top:5px;
-    position: absolute;
-    bottom: 0;
+    position: absolute; 
+    bottom: 0px; 
+    left: 0;
     width: 100%;
+}
+
+#social {
+    display: table;
+}
+  
+#social ul {
     text-align: center;
+    padding-left: 0px;
+    margin: 0 auto;
 }
-
-.fa-instagram-square, .fa-linkedin, .fa-envelope-square, .fa-phone-square-alt{
-    color: #303030;
-    font-size: 38px;
-    transition: 0.3s;
-    margin-right:15px;
+  
+#social li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 30px;
 }
-
-.fa-instagram-square:hover, .fa-linkedin:hover,  .fa-envelope-square:hover, .fa-phone-square-alt:hover {
+  
+.icon {
+    width: 46px;
+    height: 46px;
+}
+  
+.icon .border {
+    background: transparent;
+    outline: none;
+    color:#303030;
+    width: 46px;
+    height: 46px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid #303030;
+    transition: all .2s ease-in-out;
+  }
+  
+.icon .border:hover {
+    background: transparent;
+    border-color: #7A3324;
     color: #7A3324;
+    transform: scale(1.2);
+  }
+  
+.fa.fa-facebook, .fa.fa-instagram, .fa.fa-phone,.fa.fa-envelope-o {
+    font-size: 25px;
+}
+ 
+#social ul li {
+    transition: ease .3s;
+}
+  
+#social ul:hover > li {
+    opacity: 0.5;
+}
+  
+#social ul:hover > li:hover {
+    opacity: 1;
 }
 
 .copyright {
-    color: #303030;
-    font-size: xx-small;
     font-family: 'Lato', sans-serif;
-    margin-top:5px;
+    font-size: xx-small;
+    color: #303030;
 }
-
-@media only screen and (max-width: 550px) {
-    .intro {
-        text-align: left;   
-        width:60%;
-        padding-left:50px;
-    }
-}
-    
