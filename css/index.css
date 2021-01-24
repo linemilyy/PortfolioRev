@@ -34,15 +34,15 @@ nav li a {
     color:#303030;
 }
 
-nav li a:hover {
-    color:#7A3324;
-    transition:0.3s;
-    text-decoration: none; 
-}
-
 nav li a:visited {
     color:#7A3324;
     font-size: 20px;
+}
+
+nav li a:hover {
+    color:#FFBD7B;
+    transition:0.3s;
+    text-decoration: none; 
 }
 
 nav ul li {
@@ -168,4 +168,36 @@ footer {
     font-size: x-small;
     color: #303030;
     padding: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  
+    .section1 {
+        width:100%;
+    }
+
+    .logo img {
+        height:75px;
+    }
+
+    nav li {
+        padding:20px 8px 8px 8px;
+        font-size: 18px;
+    }
+
+    nav {
+        display:flex;
+        float:right;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .intro {
+        align-content: center;
+        padding-left:30px;
+        padding-right:30px;
+        top:5%;
+    }
 }

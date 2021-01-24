@@ -3,10 +3,6 @@ body {
     padding: 0;
 }
 
-.logo img {
-    height:90px;
-}
-
 nav {
     width:100%;
 }
@@ -31,15 +27,15 @@ nav li a {
     color:#303030;
 }
 
+nav li a:hover {
+    color:#7A3324;
+    transition:0.3s;
+    text-decoration: none; 
+}
+
 nav li a:visited {
     color:#7A3324;
     font-size: 20px;
-}
-
-nav li a:hover {
-    color:#FFBD7B;
-    transition:0.3s;
-    text-decoration: none; 
 }
 
 nav ul li {
@@ -89,11 +85,11 @@ h4 {
 
 h5 {
     font-family: 'Lora', serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: #7A3324;
     width:90%;
-    line-height:22px;
+    line-height:24px;
     padding: 0 0 0 20px;
 }
 
@@ -107,19 +103,16 @@ h6 {
 }
 
 .container-fluid {
-    width:65%;
+    width:75%;
     padding: 0 10px 0 10px;
 }
 
 .section {
     padding: 10px 0 10px 0;
-    margin-bottom:10px;
 }
 
 .overviewList {
     display:block;
-    justify-content: center;
-    align-content: center;
 }
 
 .deliverables, .insightList  { 
@@ -129,6 +122,27 @@ h6 {
     font-weight:400;
     list-style-type: none;
     text-align: left;
+    margin:0;
+}
+
+.col-sm-2 {
+    text-align:right;
+    padding-left:0;
+}
+
+.col-sm-4 {
+    margin:0;
+    padding:0;
+    padding-left:15px;
+}
+
+.col-sm-6 {
+    width:60%;
+}
+
+.col-sm-10 {
+    padding:0;
+    min-height:95px;
 }
 
 .centerImgtop1 {
@@ -147,7 +161,7 @@ h6 {
     display:block;
     margin-right: auto;
     margin-left:auto;
-    width: 75%;
+    width: 60%;
     padding-top:20px;
     box-shadow: 10px 10px 10px #D6D4D1;
     -moz-box-shadow: 10px 10px 10px #D6D4D1;
@@ -160,7 +174,7 @@ h6 {
     text-align: center;
     margin-right: auto;
     margin-left:auto;
-    width: 65%;
+    width: 80%;
     box-shadow: 10px 10px 10px #D6D4D1;
     -moz-box-shadow: 10px 10px 10px #D6D4D1;
     -webkit-box-shadow: 10px 10px 10px #D6D4D1;
@@ -168,11 +182,10 @@ h6 {
 }
 
 .centerImgBlock {
-    display:block;
-    text-align: center;
     margin-right: auto;
     margin-left:auto;
-    width: 65%;
+    display:block;
+    width: 80%;
 }
 
 .centerImg img {
@@ -181,12 +194,16 @@ h6 {
 
 .centerImg3 {
     width:32%;
-    padding:0;
-    justify-content: center;
+    padding:0 0 0 0 0px;
 }
 
-.col-sm-6{
-    margin-bottom:20px;
+.centerImg2 {
+    margin-right: auto;
+    margin-left:auto;
+    display:block;
+    max-width: 90%;
+    max-height:800px;
+    padding:0 0 0 20px;
 }
 
 .col-sm-4 img {
@@ -290,34 +307,13 @@ h6 {
     margin-left:auto;
     margin-right:auto;
     background-color: #D6D4D1;
-    padding:10px;
 }
 
 .workIcon {
-    margin: 0 20px 0 20px;
+    display:flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
 }
-
-.workIcon img {
-    width:300px;
-}
-
-.workIcon a, .featWork a {
-    list-style-type: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #303030;
-    text-decoration: none;
-}
-
-.workIcon a:visited, .featWork a:visited{
-    color:#7A3324;
-}
-
-.workIcon a:hover, .featWork a:hover {
-    color:#FFBD7B;
-}
-
 
 footer {
     display: table;
@@ -325,7 +321,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding:10px;
-    margin-top:20px;
 }
 
 .social {
@@ -455,28 +450,39 @@ footer {
     text-decoration: none;
 } 
 
+@media only screen and (max-width: 1010px) {   
+    .centerImg3 {
+        width:30%;
+        margin-left:10px;
+    }
+}
 
 @media only screen and (max-width: 930px) {
-    .centerImg3 {
-        width:32%;
-        margin-left:0px;
+
+    .col-sm-2 {
+        text-align:left;
+        padding:0;
+    }
+    
+    .col-sm-10 {
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .col-sm-2 {
+        text-align:left;
+    }
+}
+
+@media only screen and (max-width: 745px) {   
+    .col-sm-6 {
+        width:100%;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    .container-fluid {
-        width:80%;
-    }
-    
-    .logo img {
-        height:75px;
-    }
-
-    nav li {
-        padding:20px 8px 8px 8px;
-        font-size: 18px;
-    }
-
     nav {
         display:flex;
         float:right;
@@ -484,6 +490,10 @@ footer {
 
     .centerImgtop {
         width:95%;
+    }
+
+    .overviewList {
+        display:flex;
     }
 
     .centerImg {
@@ -494,7 +504,8 @@ footer {
         padding:20px;
     }
 
-    h1 {
-        font-size: 50px;
+    .centerImg3 {
+        width:32%;
+        margin-left:0px;
     }
 }
