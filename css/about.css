@@ -32,7 +32,7 @@ nav li a {
 }
 
 nav li a:visited {
-    color:#7A3324;
+    color:#24607A;
     font-size: 20px;
 }
 
@@ -58,7 +58,7 @@ h1 {
     font-family: 'Lora', serif;
     font-size: 62px;
     font-weight: 700;
-    color: #303030;
+    color: #24607A;
     line-height: 62px;
 }
 
@@ -66,7 +66,7 @@ h2 {
     font-family: 'Lora', serif;
     font-size: 26px;
     font-weight: 600;
-    color: #303030;
+    color: #24607A;
     line-height: 28px;
     padding-right:10px;
 }
@@ -91,7 +91,7 @@ h5 {
     font-family: 'Lora', serif;
     font-size: 18px;
     font-weight: 500;
-    color: #7A3324;
+    color:#24607A;
     width:90%;
     line-height:22px;
     padding: 0 0 0 20px;
@@ -121,7 +121,8 @@ h6 {
     margin-right: auto;
     margin-left:auto;
     display:block;
-    width:370px;
+    width:auto;
+    max-height:450px;
 }
 
 .section {
@@ -139,7 +140,7 @@ h6 {
 }
 
 .section a:visited{
-    color:#7A3324;
+    color:#24607A;
 }
 
 .section a:hover {
@@ -193,8 +194,14 @@ footer {
   
 .icon .border:hover {
     background: transparent;
-    border-color: #7A3324;
-    color: #7A3324;
+    border-color: #FFBD7B;
+    color: #FFBD7B; 
+}
+
+.icon .border:visited {
+    background: transparent;
+    border-color: #24607A;
+    color: #24607A;
 }
   
 .fa.fa-linkedin, .fa.fa-instagram, .fa.fa-phone,.fa.fa-envelope-o {
@@ -202,9 +209,14 @@ footer {
     color:#303030;
 }
 
+.fa.fa-linkedin:visited, .fa.fa-instagram:visited, .fa.fa-phone:visited,.fa.fa-envelope-o:visited {
+    font-size: 25px;
+    color: #24607A;
+}
+
 .fa.fa-linkedin:hover, .fa.fa-instagram:hover, .fa.fa-phone:hover,.fa.fa-envelope-o:hover {
     font-size: 25px;
-    color: #7A3324;
+    color: #FFBD7B;
 }
  
 .social ul li {

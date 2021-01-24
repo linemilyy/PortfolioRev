@@ -35,7 +35,7 @@ nav li a {
 }
 
 nav li a:visited {
-    color:#7A3324;
+    color: #24607A;
     font-size: 20px;
 }
 
@@ -61,7 +61,7 @@ h1 {
     font-family: 'Lora', serif;
     font-size: 62px;
     font-weight: 700;
-    color: #303030;
+    color: #24607A;
     line-height: 62px;
 }
 
@@ -76,7 +76,7 @@ h2 {
     font-family: 'Lora', serif;
     font-size: 32px;
     font-weight: 700;
-    color: #7A3324;   
+    color: #24607A; 
 }
 
 .section1 {
@@ -137,8 +137,14 @@ footer {
   
 .icon .border:hover {
     background: transparent;
-    border-color: #7A3324;
-    color: #7A3324;
+    border-color: #FFBD7B;
+    color: #FFBD7B; 
+}
+
+.icon .border:visited {
+    background: transparent;
+    border-color: #24607A;
+    color: #24607A;
 }
   
 .fa.fa-linkedin, .fa.fa-instagram, .fa.fa-phone,.fa.fa-envelope-o {
@@ -146,9 +152,14 @@ footer {
     color:#303030;
 }
 
+.fa.fa-linkedin:visited, .fa.fa-instagram:visited, .fa.fa-phone:visited,.fa.fa-envelope-o:visited {
+    font-size: 25px;
+    color: #24607A;
+}
+
 .fa.fa-linkedin:hover, .fa.fa-instagram:hover, .fa.fa-phone:hover,.fa.fa-envelope-o:hover {
     font-size: 25px;
-    color: #7A3324;
+    color: #FFBD7B;
 }
  
 .social ul li {
