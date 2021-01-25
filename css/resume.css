@@ -1,13 +1,13 @@
 body {
     font-family:'Roboto', sans-serif;
-    background-color: #FFFCF9;  
+    background-color: #F9EDE1;
     margin: 0px;
 }
 
 nav {
     display: block;
     width: 100%;
-    background-color: #FFFCF9;
+    background-color: #F9EDE1;
     height:70px;
 }
 
@@ -42,6 +42,10 @@ li a:visited {
     font-size: 20px;
 }
 
+.container-fluid {
+    width:80%;
+}
+
 h1 {
     font-family: 'Abril Fatface', cursive;
     font-size: 40px;
@@ -65,20 +69,16 @@ h3 {
 }
 
 h4 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
     color:#303030;
-    padding-top:12px;
 }
 
 h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color:#303030;
-    width:90%;
-    margin:auto;
-    line-height: 22px;
-    padding-top:18px;
+    padding-top:12px;
 }
 
 h6 {
@@ -87,112 +87,22 @@ h6 {
     font-size: 14px;
     font-weight: 400;
     color: #303030;
-    padding: 18px 0 0 15px;
-}
-
-.container-fluid {
-    width:80%;
-}
-
-.deliverables, .insightList  { 
-    list-style-type: none;
-    text-align: left;
-    margin:0;
-    padding:0;
-    font-size: 18px;
-    font-weight:400;
-}
-
-.col-sm-2 {
-    text-align:right;
-}
-
-.col-sm-4 {
-    margin:0;
-    padding:0;
-    padding-left:15px;
-}
-
-.col-sm-6 {
-    width:60%;
-}
-
-.centerImgtop1 {
-    margin-right: auto;
-    margin-left:auto;
-    display:block;
-    width: 40%;
-    padding-top:20px;
-}
-
-.centerImgtop {
-    margin-right: auto;
-    margin-left:auto;
-    display:block;
-    width: 60%;
-    padding-top:20px;
 }
 
 .centerImg {
     margin-right: auto;
     margin-left:auto;
     display:block;
-    width: 80%;
-    padding:0 0 0 20px;
+    height: auto;
+    width: 60%;
+    padding:20px;
 }
 
 .centerImg img {
     justify-content: center;
 }
 
-.centerImg3 {
-    width:32%;
-    display: inline-block;
-}
-
-.centerImg2 {
-    margin-right: auto;
-    margin-left:auto;
-    display:block;
-    max-width: 90%;
-    max-height:800px;
-    padding:0 0 0 20px;
-}
-
-.section {
-    margin-top: 20px;
-}
-
-.noPadding{
-    margin:0;
-    padding:0;
-}
-
-.insightList {
-    list-style-type: none;
-    text-align: left;
-    margin:0;
-    padding-left:32px;
-    font-size: 18px;
-}
-
-.scrollUp {
-    margin-top:60px;
-    text-align: center;
-}
-
-.fa-chevron-up {
-    color: #518683;
-    font-size: 32px;
-    transition: 0.3s;
-}
-
-.fa-chevron-up:hover {
-    color: #355654;
-    font-size: 30px;
-}
-
-.viewNext {
+.downloadClick {
     margin: 20px 24px 10px 24px;
     text-align:center;
     left: 50%;
@@ -216,8 +126,24 @@ h6 {
     text-decoration: none;
 }
 
+.scrollUp {
+    margin-top:60px;
+    text-align: center;
+}
+
+.fa-chevron-up {
+    color: #518683;
+    font-size: 32px;
+    transition: 0.3s;
+}
+
+.fa-chevron-up:hover {
+    color: #355654;
+    font-size: 30px;
+}
+
 footer {
-    margin: 60px 24px 10px 24px;
+    margin: 20px 24px 10px 24px;
     text-align:center;
     left: 50%;
 }
@@ -307,7 +233,9 @@ footer {
 .close:focus {
     color: #FFFCF9;
     text-decoration: none;
+    cursor: pointer;
 } 
+
 
 @media only screen and (max-width: 1260px) {    
     .container-fluid {
@@ -320,13 +248,8 @@ footer {
         width:30%;
         margin-left:10px;
     }
-}
 
 
-@media only screen and (max-width: 766px) {
-    .col-sm-2 {
-        text-align:left;
-    }
 }
 
 @media only screen and (max-width: 745px) {   
@@ -356,14 +279,6 @@ footer {
     .deliverables {
         width:500px;
         float:left;
-    }
-
-    .insightList {
-        list-style-type: none;
-        text-align: left;
-        margin:0;
-        padding-left:18px;
-        font-size: 18px;
     }
 
     .col-sm-6{
